@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations: null
+  annotations: 
+    gitops.turbonomic.io/action-mode: "direct"
   labels:
     app: bee
   name: beekman-gitops
